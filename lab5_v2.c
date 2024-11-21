@@ -112,9 +112,13 @@ OS_STK task7_stk[TASK_STACKSIZE];
 #define TASK6_PRIORITY 6
 #define TASK7_PRIORITY 7
 
-// Mailbox
-OS_EVENT *SWBox1;
-OS_EVENT *SWBox2;
+// Queue Definitions
+#define QUEUE_SIZE 10
+void *Queue1Storage[QUEUE_SIZE]; // Queue for states 2, 3, 4
+void *Queue2Storage[QUEUE_SIZE]; // Queue for states 5, 6, 7
+
+OS_EVENT *StateQueue1;
+OS_EVENT *StateQueue2;
 
 // read slider value
 void task1(void *pdata)
@@ -190,11 +194,11 @@ void task1(void *pdata)
 
         if (state = 2 | state == 3 | state == 4)
         {
-            OSMboxPostOpt(SWBox1, &state, OS_POST_OPT_BROADCAST);
+            OSQPost(StateQueue1, &state);
         }
         if (state = 5 | state == 6 | state == 7)
         {
-            OSMboxPostOpt(SWBox2, &state, OS_POST_OPT_BROADCAST);
+            OSQPost(StateQueue2, &state);
         }
         OSTimeDlyHMSM(0, 0, 0, 10);
     }
@@ -207,8 +211,8 @@ void task2(void *pdata) // read orange
     {
         INT8U err;
         int *state;
-        state = OSMboxPend(SWBox1, 0, &err);
-        if (*state == 2)
+        state = OSQPend(StateQueue1, 0, &err);
+        if (&state == 2)
         {
             IOWR(HEX_BASE, 0, TWO);
             IOWR(LEDS_BASE, 0, LED0 | LED1 | LED5); // czerw1 pom1 pom2
@@ -225,8 +229,8 @@ void task3(void *pdata)
     {
         INT8U err;
         int *state;
-        state = OSMboxPend(SWBox1, 0, &err);
-        if (*state == 3)
+        state = OSQPend(StateQueue1, 0, &err);
+        if (&state == 3)
         {
             IOWR(HEX_BASE, 0, THREE);
             IOWR(LEDS_BASE, 0, LED2 | LED4); // ziel1 czer2
@@ -243,8 +247,8 @@ void task4(void *pdata)
     {
         INT8U err;
         int *state;
-        state = OSMboxPend(SWBox1, 0, &err);
-        if (*state == 4)
+        state = OSQPend(StateQueue1, 0, &err);
+        if (&state == 4)
         {
             IOWR(HEX_BASE, 0, FOUR);
             IOWR(LEDS_BASE, 0, LED1 | LED4 | LED5); // pom1 pom2 czerw2
@@ -261,8 +265,8 @@ void task5(void *pdata)
     {
         INT8U err;
         int *state;
-        state = OSMboxPend(SWBox2, 0, &err);
-        if (*state == 5)
+        state = OSQPend(StateQueue2, 0, &err);
+        if (&state == 5)
         {
             IOWR(HEX_BASE, 0, FIVE);
             IOWR(LEDS_BASE, 0, LED3 | LED7);
@@ -278,8 +282,8 @@ void task6(void *pdata)
     {
         INT8U err;
         int *state;
-        state = OSMboxPend(SWBox2, 0, &err);
-        if (*state == 6)
+        state = OSQPend(StateQueue2, 0, &err);
+        if (&state == 6)
         {
             IOWR(HEX_BASE, 0, SIX);
             IOWR(HEX_BASE, 2, SIX);
@@ -295,8 +299,8 @@ void task7(void *pdata)
     {
         INT8U err;
         int *state;
-        state = OSMboxPend(SWBox2, 0, &err);
-        if (*state == 6)
+        state = OSQPend(StateQueue2, 0, &err);
+        if (&state == 6)
         {
             IOWR(HEX_BASE, 0, SEVEN);
             IOWR(HEX_BASE, 2, SEVEN);
@@ -310,8 +314,8 @@ void task7(void *pdata)
 int main(void)
 {
 
-    SWBox1 = OSMboxCreate((void *)0);
-    SWBox2 = OSMboxCreate((void *)0);
+    StateQueue1 = OSQCreate(Queue1Storage, QUEUE_SIZE);
+    StateQueue2 = OSQCreate(Queue2Storage, QUEUE_SIZE);
 
     OSTaskCreateExt(task1,
                     NULL,
