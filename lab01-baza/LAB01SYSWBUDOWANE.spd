@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="simulation/LAB01SYSWBUDOWANE.vhd" type="VHDL" />
+ <file path="simulation/lab01syswbudowane_rst_controller.vhd" type="VHDL" />
+ <file
+   path="simulation/lab01syswbudowane_rst_controller_001.vhd"
+   type="VHDL" />
+ <file
+   path="simulation/lab01syswbudowane_rst_controller_002.vhd"
+   type="VHDL" />
+ <topLevel name="LAB01SYSWBUDOWANE" />
+ <deviceFamily name="cyclonev" />
+ <modelMap
+   controllerPath="LAB01SYSWBUDOWANE.OnChip_Memory"
+   modelPath="LAB01SYSWBUDOWANE.OnChip_Memory" />
+</simPackage>

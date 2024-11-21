@@ -1,0 +1,92 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate A:\Pulpit\LAB01SYSWBUDOWANE\LAB01SYSWBUDOWANE.qsys --block-symbol-file --output-directory=A:\Pulpit\LAB01SYSWBUDOWANE --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading LAB01SYSWBUDOWANE/LAB01SYSWBUDOWANE.qsys
+Progress: Reading input file
+Progress: Adding HEX [SEG7_IF 1.0]
+Progress: Parameterizing module HEX
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding NIOS_II_Processor [altera_nios2_gen2 17.1]
+Progress: Parameterizing module NIOS_II_Processor
+Progress: Adding OnChip_Memory [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module OnChip_Memory
+Progress: Adding clk_0 [clock_source 17.1]
+Progress: Parameterizing module clk_0
+Progress: Adding leds [altera_avalon_pio 17.1]
+Progress: Parameterizing module leds
+Progress: Adding pushbutton [altera_avalon_pio 17.1]
+Progress: Parameterizing module pushbutton
+Progress: Adding sw_sliders [altera_avalon_pio 17.1]
+Progress: Parameterizing module sw_sliders
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: LAB01SYSWBUDOWANE.JTAG_UART: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: LAB01SYSWBUDOWANE.pushbutton: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: LAB01SYSWBUDOWANE.sw_sliders: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate A:\Pulpit\LAB01SYSWBUDOWANE\LAB01SYSWBUDOWANE.qsys --synthesis=VHDL --output-directory=A:\Pulpit\LAB01SYSWBUDOWANE\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading LAB01SYSWBUDOWANE/LAB01SYSWBUDOWANE.qsys
+Progress: Reading input file
+Progress: Adding HEX [SEG7_IF 1.0]
+Progress: Parameterizing module HEX
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding NIOS_II_Processor [altera_nios2_gen2 17.1]
+Progress: Parameterizing module NIOS_II_Processor
+Progress: Adding OnChip_Memory [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module OnChip_Memory
+Progress: Adding clk_0 [clock_source 17.1]
+Progress: Parameterizing module clk_0
+Progress: Adding leds [altera_avalon_pio 17.1]
+Progress: Parameterizing module leds
+Progress: Adding pushbutton [altera_avalon_pio 17.1]
+Progress: Parameterizing module pushbutton
+Progress: Adding sw_sliders [altera_avalon_pio 17.1]
+Progress: Parameterizing module sw_sliders
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: LAB01SYSWBUDOWANE.JTAG_UART: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: LAB01SYSWBUDOWANE.pushbutton: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: LAB01SYSWBUDOWANE.sw_sliders: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: LAB01SYSWBUDOWANE: Generating LAB01SYSWBUDOWANE "LAB01SYSWBUDOWANE" for QUARTUS_SYNTH
+Info: HEX: "LAB01SYSWBUDOWANE" instantiated SEG7_IF "HEX"
+Info: JTAG_UART: Starting RTL generation for module 'LAB01SYSWBUDOWANE_JTAG_UART'
+Info: JTAG_UART:   Generation command is [exec A:/intelfpga_lite/quartus/bin64/perl/bin/perl.exe -I A:/intelfpga_lite/quartus/bin64/perl/lib -I A:/intelfpga_lite/quartus/sopc_builder/bin/europa -I A:/intelfpga_lite/quartus/sopc_builder/bin/perl_lib -I A:/intelfpga_lite/quartus/sopc_builder/bin -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/common -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=LAB01SYSWBUDOWANE_JTAG_UART --dir=C:/Users/SEBAST~1/AppData/Local/Temp/alt0033_8939491684517900665.dir/0032_JTAG_UART_gen/ --quartus_dir=A:/intelfpga_lite/quartus --verilog --config=C:/Users/SEBAST~1/AppData/Local/Temp/alt0033_8939491684517900665.dir/0032_JTAG_UART_gen//LAB01SYSWBUDOWANE_JTAG_UART_component_configuration.pl  --do_build_sim=0  ]
+Info: JTAG_UART: Done RTL generation for module 'LAB01SYSWBUDOWANE_JTAG_UART'
+Info: JTAG_UART: "LAB01SYSWBUDOWANE" instantiated altera_avalon_jtag_uart "JTAG_UART"
+Info: NIOS_II_Processor: "LAB01SYSWBUDOWANE" instantiated altera_nios2_gen2 "NIOS_II_Processor"
+Info: OnChip_Memory: Starting RTL generation for module 'LAB01SYSWBUDOWANE_OnChip_Memory'
+Info: OnChip_Memory:   Generation command is [exec A:/intelfpga_lite/quartus/bin64/perl/bin/perl.exe -I A:/intelfpga_lite/quartus/bin64/perl/lib -I A:/intelfpga_lite/quartus/sopc_builder/bin/europa -I A:/intelfpga_lite/quartus/sopc_builder/bin/perl_lib -I A:/intelfpga_lite/quartus/sopc_builder/bin -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/common -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=LAB01SYSWBUDOWANE_OnChip_Memory --dir=C:/Users/SEBAST~1/AppData/Local/Temp/alt0033_8939491684517900665.dir/0033_OnChip_Memory_gen/ --quartus_dir=A:/intelfpga_lite/quartus --verilog --config=C:/Users/SEBAST~1/AppData/Local/Temp/alt0033_8939491684517900665.dir/0033_OnChip_Memory_gen//LAB01SYSWBUDOWANE_OnChip_Memory_component_configuration.pl  --do_build_sim=0  ]
+Info: OnChip_Memory: Done RTL generation for module 'LAB01SYSWBUDOWANE_OnChip_Memory'
+Info: OnChip_Memory: "LAB01SYSWBUDOWANE" instantiated altera_avalon_onchip_memory2 "OnChip_Memory"
+Info: leds: Starting RTL generation for module 'LAB01SYSWBUDOWANE_leds'
+Info: leds:   Generation command is [exec A:/intelfpga_lite/quartus/bin64/perl/bin/perl.exe -I A:/intelfpga_lite/quartus/bin64/perl/lib -I A:/intelfpga_lite/quartus/sopc_builder/bin/europa -I A:/intelfpga_lite/quartus/sopc_builder/bin/perl_lib -I A:/intelfpga_lite/quartus/sopc_builder/bin -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/common -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=LAB01SYSWBUDOWANE_leds --dir=C:/Users/SEBAST~1/AppData/Local/Temp/alt0033_8939491684517900665.dir/0034_leds_gen/ --quartus_dir=A:/intelfpga_lite/quartus --verilog --config=C:/Users/SEBAST~1/AppData/Local/Temp/alt0033_8939491684517900665.dir/0034_leds_gen//LAB01SYSWBUDOWANE_leds_component_configuration.pl  --do_build_sim=0  ]
+Info: leds: Done RTL generation for module 'LAB01SYSWBUDOWANE_leds'
+Info: leds: "LAB01SYSWBUDOWANE" instantiated altera_avalon_pio "leds"
+Info: pushbutton: Starting RTL generation for module 'LAB01SYSWBUDOWANE_pushbutton'
+Info: pushbutton:   Generation command is [exec A:/intelfpga_lite/quartus/bin64/perl/bin/perl.exe -I A:/intelfpga_lite/quartus/bin64/perl/lib -I A:/intelfpga_lite/quartus/sopc_builder/bin/europa -I A:/intelfpga_lite/quartus/sopc_builder/bin/perl_lib -I A:/intelfpga_lite/quartus/sopc_builder/bin -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/common -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=LAB01SYSWBUDOWANE_pushbutton --dir=C:/Users/SEBAST~1/AppData/Local/Temp/alt0033_8939491684517900665.dir/0035_pushbutton_gen/ --quartus_dir=A:/intelfpga_lite/quartus --verilog --config=C:/Users/SEBAST~1/AppData/Local/Temp/alt0033_8939491684517900665.dir/0035_pushbutton_gen//LAB01SYSWBUDOWANE_pushbutton_component_configuration.pl  --do_build_sim=0  ]
+Info: pushbutton: Done RTL generation for module 'LAB01SYSWBUDOWANE_pushbutton'
+Info: pushbutton: "LAB01SYSWBUDOWANE" instantiated altera_avalon_pio "pushbutton"
+Info: sw_sliders: Starting RTL generation for module 'LAB01SYSWBUDOWANE_sw_sliders'
+Info: sw_sliders:   Generation command is [exec A:/intelfpga_lite/quartus/bin64/perl/bin/perl.exe -I A:/intelfpga_lite/quartus/bin64/perl/lib -I A:/intelfpga_lite/quartus/sopc_builder/bin/europa -I A:/intelfpga_lite/quartus/sopc_builder/bin/perl_lib -I A:/intelfpga_lite/quartus/sopc_builder/bin -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/common -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=LAB01SYSWBUDOWANE_sw_sliders --dir=C:/Users/SEBAST~1/AppData/Local/Temp/alt0033_8939491684517900665.dir/0036_sw_sliders_gen/ --quartus_dir=A:/intelfpga_lite/quartus --verilog --config=C:/Users/SEBAST~1/AppData/Local/Temp/alt0033_8939491684517900665.dir/0036_sw_sliders_gen//LAB01SYSWBUDOWANE_sw_sliders_component_configuration.pl  --do_build_sim=0  ]
+Info: sw_sliders: Done RTL generation for module 'LAB01SYSWBUDOWANE_sw_sliders'
+Info: sw_sliders: "LAB01SYSWBUDOWANE" instantiated altera_avalon_pio "sw_sliders"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "LAB01SYSWBUDOWANE" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "LAB01SYSWBUDOWANE" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "LAB01SYSWBUDOWANE" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'LAB01SYSWBUDOWANE_NIOS_II_Processor_cpu'
+Info: cpu:   Generation command is [exec A:/intelFPGA_lite/quartus/bin64//eperlcmd.exe -I A:/intelFPGA_lite/quartus/bin64//perl/lib -I A:/intelfpga_lite/quartus/sopc_builder/bin/europa -I A:/intelfpga_lite/quartus/sopc_builder/bin/perl_lib -I A:/intelfpga_lite/quartus/sopc_builder/bin -I A:/intelfpga_lite/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I A:/intelfpga_lite/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I A:/intelfpga_lite/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I A:/intelfpga_lite/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- A:/intelfpga_lite/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=LAB01SYSWBUDOWANE_NIOS_II_Processor_cpu --dir=C:/Users/SEBAST~1/AppData/Local/Temp/alt0033_8939491684517900665.dir/0039_cpu_gen/ --quartus_bindir=A:/intelFPGA_lite/quartus/bin64/ --verilog --config=C:/Users/SEBAST~1/AppData/Local/Temp/alt0033_8939491684517900665.dir/0039_cpu_gen//LAB01SYSWBUDOWANE_NIOS_II_Processor_cpu_processor_configuration.pl  --do_build_sim=0  ]

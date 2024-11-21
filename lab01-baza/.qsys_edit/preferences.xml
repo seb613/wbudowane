@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="143" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library,Project,Library/Processors and Peripherals/Embedded Processors,Library/Processors and Peripherals" />
+ <window width="1759" height="1156" x="241" y="68" />
+ <generation
+   synthesis="VHDL"
+   path="A:/Pulpit/LAB01SYSWBUDOWANE/"
+   simulation="NONE" />
+</preferences>

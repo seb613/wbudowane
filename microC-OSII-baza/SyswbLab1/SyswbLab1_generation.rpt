@@ -1,0 +1,139 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate A:\Pulpit\SyswbLab1\SyswbLab1.qsys --block-symbol-file --output-directory=A:\Pulpit\SyswbLab1\SyswbLab1 --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading SyswbLab1/SyswbLab1.qsys
+Progress: Reading input file
+Progress: Adding HEX [SEG7_IF 1.0]
+Progress: Parameterizing module HEX
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding NIOS_II_Processor [altera_nios2_gen2 17.1]
+Progress: Parameterizing module NIOS_II_Processor
+Progress: Adding OnChip_Memory [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module OnChip_Memory
+Progress: Adding clk_0 [clock_source 17.1]
+Progress: Parameterizing module clk_0
+Progress: Adding leds [altera_avalon_pio 17.1]
+Progress: Parameterizing module leds
+Progress: Adding pushbutton [altera_avalon_pio 17.1]
+Progress: Parameterizing module pushbutton
+Progress: Adding sw_sliders [altera_avalon_pio 17.1]
+Progress: Parameterizing module sw_sliders
+Progress: Adding timer_0 [altera_avalon_timer 17.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: SyswbLab1.JTAG_UART: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: SyswbLab1.pushbutton: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: SyswbLab1.sw_sliders: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate A:\Pulpit\SyswbLab1\SyswbLab1.qsys --synthesis=VERILOG --output-directory=A:\Pulpit\SyswbLab1\SyswbLab1\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading SyswbLab1/SyswbLab1.qsys
+Progress: Reading input file
+Progress: Adding HEX [SEG7_IF 1.0]
+Progress: Parameterizing module HEX
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding NIOS_II_Processor [altera_nios2_gen2 17.1]
+Progress: Parameterizing module NIOS_II_Processor
+Progress: Adding OnChip_Memory [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module OnChip_Memory
+Progress: Adding clk_0 [clock_source 17.1]
+Progress: Parameterizing module clk_0
+Progress: Adding leds [altera_avalon_pio 17.1]
+Progress: Parameterizing module leds
+Progress: Adding pushbutton [altera_avalon_pio 17.1]
+Progress: Parameterizing module pushbutton
+Progress: Adding sw_sliders [altera_avalon_pio 17.1]
+Progress: Parameterizing module sw_sliders
+Progress: Adding timer_0 [altera_avalon_timer 17.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: SyswbLab1.JTAG_UART: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: SyswbLab1.pushbutton: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: SyswbLab1.sw_sliders: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: SyswbLab1: Generating SyswbLab1 "SyswbLab1" for QUARTUS_SYNTH
+Info: HEX: "SyswbLab1" instantiated SEG7_IF "HEX"
+Info: JTAG_UART: Starting RTL generation for module 'SyswbLab1_JTAG_UART'
+Info: JTAG_UART:   Generation command is [exec A:/intelfpga_lite/quartus/bin64/perl/bin/perl.exe -I A:/intelfpga_lite/quartus/bin64/perl/lib -I A:/intelfpga_lite/quartus/sopc_builder/bin/europa -I A:/intelfpga_lite/quartus/sopc_builder/bin/perl_lib -I A:/intelfpga_lite/quartus/sopc_builder/bin -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/common -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=SyswbLab1_JTAG_UART --dir=C:/Users/SEBAST~1/AppData/Local/Temp/alt0047_6318997312134914367.dir/0003_JTAG_UART_gen/ --quartus_dir=A:/intelfpga_lite/quartus --verilog --config=C:/Users/SEBAST~1/AppData/Local/Temp/alt0047_6318997312134914367.dir/0003_JTAG_UART_gen//SyswbLab1_JTAG_UART_component_configuration.pl  --do_build_sim=0  ]
+Info: JTAG_UART: Done RTL generation for module 'SyswbLab1_JTAG_UART'
+Info: JTAG_UART: "SyswbLab1" instantiated altera_avalon_jtag_uart "JTAG_UART"
+Info: NIOS_II_Processor: "SyswbLab1" instantiated altera_nios2_gen2 "NIOS_II_Processor"
+Info: OnChip_Memory: Starting RTL generation for module 'SyswbLab1_OnChip_Memory'
+Info: OnChip_Memory:   Generation command is [exec A:/intelfpga_lite/quartus/bin64/perl/bin/perl.exe -I A:/intelfpga_lite/quartus/bin64/perl/lib -I A:/intelfpga_lite/quartus/sopc_builder/bin/europa -I A:/intelfpga_lite/quartus/sopc_builder/bin/perl_lib -I A:/intelfpga_lite/quartus/sopc_builder/bin -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/common -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=SyswbLab1_OnChip_Memory --dir=C:/Users/SEBAST~1/AppData/Local/Temp/alt0047_6318997312134914367.dir/0004_OnChip_Memory_gen/ --quartus_dir=A:/intelfpga_lite/quartus --verilog --config=C:/Users/SEBAST~1/AppData/Local/Temp/alt0047_6318997312134914367.dir/0004_OnChip_Memory_gen//SyswbLab1_OnChip_Memory_component_configuration.pl  --do_build_sim=0  ]
+Info: OnChip_Memory: Done RTL generation for module 'SyswbLab1_OnChip_Memory'
+Info: OnChip_Memory: "SyswbLab1" instantiated altera_avalon_onchip_memory2 "OnChip_Memory"
+Info: leds: Starting RTL generation for module 'SyswbLab1_leds'
+Info: leds:   Generation command is [exec A:/intelfpga_lite/quartus/bin64/perl/bin/perl.exe -I A:/intelfpga_lite/quartus/bin64/perl/lib -I A:/intelfpga_lite/quartus/sopc_builder/bin/europa -I A:/intelfpga_lite/quartus/sopc_builder/bin/perl_lib -I A:/intelfpga_lite/quartus/sopc_builder/bin -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/common -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=SyswbLab1_leds --dir=C:/Users/SEBAST~1/AppData/Local/Temp/alt0047_6318997312134914367.dir/0005_leds_gen/ --quartus_dir=A:/intelfpga_lite/quartus --verilog --config=C:/Users/SEBAST~1/AppData/Local/Temp/alt0047_6318997312134914367.dir/0005_leds_gen//SyswbLab1_leds_component_configuration.pl  --do_build_sim=0  ]
+Info: leds: Done RTL generation for module 'SyswbLab1_leds'
+Info: leds: "SyswbLab1" instantiated altera_avalon_pio "leds"
+Info: pushbutton: Starting RTL generation for module 'SyswbLab1_pushbutton'
+Info: pushbutton:   Generation command is [exec A:/intelfpga_lite/quartus/bin64/perl/bin/perl.exe -I A:/intelfpga_lite/quartus/bin64/perl/lib -I A:/intelfpga_lite/quartus/sopc_builder/bin/europa -I A:/intelfpga_lite/quartus/sopc_builder/bin/perl_lib -I A:/intelfpga_lite/quartus/sopc_builder/bin -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/common -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=SyswbLab1_pushbutton --dir=C:/Users/SEBAST~1/AppData/Local/Temp/alt0047_6318997312134914367.dir/0006_pushbutton_gen/ --quartus_dir=A:/intelfpga_lite/quartus --verilog --config=C:/Users/SEBAST~1/AppData/Local/Temp/alt0047_6318997312134914367.dir/0006_pushbutton_gen//SyswbLab1_pushbutton_component_configuration.pl  --do_build_sim=0  ]
+Info: pushbutton: Done RTL generation for module 'SyswbLab1_pushbutton'
+Info: pushbutton: "SyswbLab1" instantiated altera_avalon_pio "pushbutton"
+Info: sw_sliders: Starting RTL generation for module 'SyswbLab1_sw_sliders'
+Info: sw_sliders:   Generation command is [exec A:/intelfpga_lite/quartus/bin64/perl/bin/perl.exe -I A:/intelfpga_lite/quartus/bin64/perl/lib -I A:/intelfpga_lite/quartus/sopc_builder/bin/europa -I A:/intelfpga_lite/quartus/sopc_builder/bin/perl_lib -I A:/intelfpga_lite/quartus/sopc_builder/bin -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/common -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=SyswbLab1_sw_sliders --dir=C:/Users/SEBAST~1/AppData/Local/Temp/alt0047_6318997312134914367.dir/0007_sw_sliders_gen/ --quartus_dir=A:/intelfpga_lite/quartus --verilog --config=C:/Users/SEBAST~1/AppData/Local/Temp/alt0047_6318997312134914367.dir/0007_sw_sliders_gen//SyswbLab1_sw_sliders_component_configuration.pl  --do_build_sim=0  ]
+Info: sw_sliders: Done RTL generation for module 'SyswbLab1_sw_sliders'
+Info: sw_sliders: "SyswbLab1" instantiated altera_avalon_pio "sw_sliders"
+Info: timer_0: Starting RTL generation for module 'SyswbLab1_timer_0'
+Info: timer_0:   Generation command is [exec A:/intelFPGA_lite/quartus/bin64//perl/bin/perl.exe -I A:/intelFPGA_lite/quartus/bin64//perl/lib -I A:/intelfpga_lite/quartus/sopc_builder/bin/europa -I A:/intelfpga_lite/quartus/sopc_builder/bin/perl_lib -I A:/intelfpga_lite/quartus/sopc_builder/bin -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/common -I A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- A:/intelfpga_lite/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=SyswbLab1_timer_0 --dir=C:/Users/SEBAST~1/AppData/Local/Temp/alt0047_6318997312134914367.dir/0008_timer_0_gen/ --quartus_dir=A:/intelfpga_lite/quartus --verilog --config=C:/Users/SEBAST~1/AppData/Local/Temp/alt0047_6318997312134914367.dir/0008_timer_0_gen//SyswbLab1_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0: Done RTL generation for module 'SyswbLab1_timer_0'
+Info: timer_0: "SyswbLab1" instantiated altera_avalon_timer "timer_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "SyswbLab1" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "SyswbLab1" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "SyswbLab1" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'SyswbLab1_NIOS_II_Processor_cpu'
+Info: cpu:   Generation command is [exec A:/intelFPGA_lite/quartus/bin64//eperlcmd.exe -I A:/intelFPGA_lite/quartus/bin64//perl/lib -I A:/intelfpga_lite/quartus/sopc_builder/bin/europa -I A:/intelfpga_lite/quartus/sopc_builder/bin/perl_lib -I A:/intelfpga_lite/quartus/sopc_builder/bin -I A:/intelfpga_lite/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I A:/intelfpga_lite/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I A:/intelfpga_lite/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I A:/intelfpga_lite/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- A:/intelfpga_lite/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=SyswbLab1_NIOS_II_Processor_cpu --dir=C:/Users/SEBAST~1/AppData/Local/Temp/alt0047_6318997312134914367.dir/0011_cpu_gen/ --quartus_bindir=A:/intelFPGA_lite/quartus/bin64/ --verilog --config=C:/Users/SEBAST~1/AppData/Local/Temp/alt0047_6318997312134914367.dir/0011_cpu_gen//SyswbLab1_NIOS_II_Processor_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2024.11.20 20:52:35 (*) Starting Nios II generation
+Info: cpu: # 2024.11.20 20:52:35 (*)   Checking for plaintext license.
+Info: cpu: # 2024.11.20 20:52:36 (*)   Couldn't query license setup in Quartus directory A:/intelFPGA_lite/quartus/bin64/
+Info: cpu: # 2024.11.20 20:52:36 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2024.11.20 20:52:36 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2024.11.20 20:52:36 (*)   Plaintext license not found.
+Info: cpu: # 2024.11.20 20:52:36 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2024.11.20 20:52:36 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2024.11.20 20:52:36 (*)   Creating all objects for CPU
+Info: cpu: # 2024.11.20 20:52:37 (*)   Generating RTL from CPU objects
+Info: cpu: # 2024.11.20 20:52:37 (*)   Creating plain-text RTL
+Info: cpu: # 2024.11.20 20:52:38 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'SyswbLab1_NIOS_II_Processor_cpu'
+Info: cpu: "NIOS_II_Processor" instantiated altera_nios2_gen2_unit "cpu"
+Info: NIOS_II_Processor_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "NIOS_II_Processor_data_master_translator"
+Info: JTAG_UART_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "JTAG_UART_avalon_jtag_slave_translator"
+Info: NIOS_II_Processor_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "NIOS_II_Processor_data_master_agent"
+Info: JTAG_UART_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "JTAG_UART_avalon_jtag_slave_agent"
+Info: JTAG_UART_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "JTAG_UART_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file A:/Pulpit/SyswbLab1/SyswbLab1/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file A:/Pulpit/SyswbLab1/SyswbLab1/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file A:/Pulpit/SyswbLab1/SyswbLab1/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: SyswbLab1: Done "SyswbLab1" with 31 modules, 44 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,26 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst unsaved.HEX -pg 1 -lvl 3 -y 740
+preplace inst unsaved.NIOS_II_Processor -pg 1 -lvl 2 -y 110
+preplace inst unsaved.pushbutton -pg 1 -lvl 3 -y 220
+preplace inst unsaved.NIOS_II_Processor.cpu -pg 1
+preplace inst unsaved.NIOS_II_Processor.clock_bridge -pg 1
+preplace inst unsaved.OnChip_Memory -pg 1 -lvl 3 -y 660
+preplace inst unsaved.NIOS_II_Processor.reset_bridge -pg 1
+preplace inst unsaved.sw_sliders -pg 1 -lvl 3 -y 340
+preplace inst unsaved.leds -pg 1 -lvl 3 -y 560
+preplace inst unsaved.clk_0 -pg 1 -lvl 1 -y 30
+preplace inst unsaved -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst unsaved.JTAG_UART -pg 1 -lvl 3 -y 460
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.hex,(SLAVE)HEX.conduit_end) 1 0 3 NJ 810 NJ 810 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.pushbutton,(SLAVE)pushbutton.external_connection) 1 0 3 NJ 250 NJ 250 NJ
+preplace netloc FAN_OUT<net_container>unsaved</net_container>(SLAVE)pushbutton.irq,(MASTER)NIOS_II_Processor.irq,(SLAVE)JTAG_UART.irq,(SLAVE)sw_sliders.irq) 1 2 1 750
+preplace netloc FAN_OUT<net_container>unsaved</net_container>(SLAVE)JTAG_UART.clk,(SLAVE)leds.clk,(MASTER)clk_0.clk,(SLAVE)sw_sliders.clk,(SLAVE)OnChip_Memory.clk1,(SLAVE)NIOS_II_Processor.clk,(SLAVE)pushbutton.clk,(SLAVE)HEX.clock_sink) 1 1 2 310 630 690
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.leds,(SLAVE)leds.external_connection) 1 0 3 NJ 590 NJ 590 NJ
+preplace netloc INTERCONNECT<net_container>unsaved</net_container>(SLAVE)pushbutton.reset,(SLAVE)NIOS_II_Processor.reset,(SLAVE)sw_sliders.reset,(SLAVE)OnChip_Memory.reset1,(MASTER)NIOS_II_Processor.debug_reset_request,(SLAVE)JTAG_UART.reset,(SLAVE)HEX.clock_sink_reset,(MASTER)clk_0.clk_reset,(SLAVE)leds.reset) 1 1 2 290 650 730
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.sw_sliders,(SLAVE)sw_sliders.external_connection) 1 0 3 NJ 370 NJ 370 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)clk_0.clk_in,(SLAVE)unsaved.clk) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>unsaved</net_container>(SLAVE)OnChip_Memory.s1,(MASTER)NIOS_II_Processor.instruction_master,(SLAVE)HEX.avalon_slave,(SLAVE)pushbutton.s1,(SLAVE)leds.s1,(MASTER)NIOS_II_Processor.data_master,(SLAVE)JTAG_UART.avalon_jtag_slave,(SLAVE)NIOS_II_Processor.debug_mem_slave,(SLAVE)sw_sliders.s1) 1 1 2 330 610 710
+levelinfo -pg 1 0 80 950
+levelinfo -hier unsaved 90 120 450 790 940
