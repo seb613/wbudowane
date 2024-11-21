@@ -212,7 +212,7 @@ void task2(void *pdata) // read orange
         INT8U err;
         int *state;
         state = OSQPend(StateQueue1, 0, &err);
-        if (&state == 2)
+        if (*state == 2)
         {
             IOWR(HEX_BASE, 0, TWO);
             IOWR(LEDS_BASE, 0, LED0 | LED1 | LED5); // czerw1 pom1 pom2
@@ -230,7 +230,7 @@ void task3(void *pdata)
         INT8U err;
         int *state;
         state = OSQPend(StateQueue1, 0, &err);
-        if (&state == 3)
+        if (*state == 3)
         {
             IOWR(HEX_BASE, 0, THREE);
             IOWR(LEDS_BASE, 0, LED2 | LED4); // ziel1 czer2
@@ -248,7 +248,7 @@ void task4(void *pdata)
         INT8U err;
         int *state;
         state = OSQPend(StateQueue1, 0, &err);
-        if (&state == 4)
+        if (*state == 4)
         {
             IOWR(HEX_BASE, 0, FOUR);
             IOWR(LEDS_BASE, 0, LED1 | LED4 | LED5); // pom1 pom2 czerw2
@@ -266,7 +266,7 @@ void task5(void *pdata)
         INT8U err;
         int *state;
         state = OSQPend(StateQueue2, 0, &err);
-        if (&state == 5)
+        if (*state == 5)
         {
             IOWR(HEX_BASE, 0, FIVE);
             IOWR(LEDS_BASE, 0, LED3 | LED7);
@@ -283,7 +283,7 @@ void task6(void *pdata)
         INT8U err;
         int *state;
         state = OSQPend(StateQueue2, 0, &err);
-        if (&state == 6)
+        if (*state == 6)
         {
             IOWR(HEX_BASE, 0, SIX);
             IOWR(HEX_BASE, 2, SIX);
@@ -300,7 +300,7 @@ void task7(void *pdata)
         INT8U err;
         int *state;
         state = OSQPend(StateQueue2, 0, &err);
-        if (&state == 6)
+        if (*state == 6)
         {
             IOWR(HEX_BASE, 0, SEVEN);
             IOWR(HEX_BASE, 2, SEVEN);
