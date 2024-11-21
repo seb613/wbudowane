@@ -376,7 +376,7 @@ int main(void)
                     NULL,
                     0);
 
-    OSTaskCreateExt(task,
+    OSTaskCreateExt(task7,
                     NULL,
                     (void *)&task7_stk[TASK_STACKSIZE - 1],
                     TASK7_PRIORITY,
