@@ -102,6 +102,7 @@ OS_STK task2_stk[TASK_STACKSIZE];
 #define TASK2_PRIORITY 2
 
 // Queue
+#define QUEUE_SIZE 10
 void *SWQueueStorage[QUEUE_SIZE]; // Storage for queue
 OS_EVENT *SWQueue;                // Queue pointer
 
