@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <system.h>
 #include "includes.h"
+#include <io.h>
 
 // Template microC/OSII Hello world
 //  Platform designer -> processors_and_peripherals -> Peripherals -> Interval Timer ->
@@ -115,19 +116,16 @@ OS_STK task7_stk[TASK_STACKSIZE];
 OS_EVENT *SWBox1;
 OS_EVENT *SWBox2;
 
-// globalne
-int state = STATE_RED;
-int pstate = STATE_ORANGE;
-
 // read slider value
 void task1(void *pdata)
 {
+    int state = STATE_RED;
+    int pstate = STATE_ORANGE;
+    int swstate;
+
     while (1)
     {
-        int sw;
-        int *msg;
         swstate = IORD(SW_SLIDERS_BASE, 0);
-
         if (__builtin_popcount(swstate) && (1 == 2))
         {
             state = 7;
@@ -140,7 +138,6 @@ void task1(void *pdata)
                 state = 1;
                 pstate = 4;
             }
-            break;
         }
 
         if (swstate & SW5)
@@ -166,9 +163,9 @@ void task1(void *pdata)
 
         if (state == STATE_RED_ORANGE)
         {
-            if ((&state & SW8) && (pstate == 1))
+            if ((state & SW8) && (pstate == 1))
             {
-                &state = 3;
+                state = 3;
                 pstate = 2;
             }
         }
