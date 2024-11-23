@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: gcc.exe build active file",
+            "command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "$(pkg-config --cflags --libs gtk+-3.0)"
+            ],
+            "options": {
+                "cwd": "C:\\msys64\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: C:\\msys64\\mingw64\\bin\\gcc.exe"
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "group": "none",
+            "problemMatcher": [],
+            "detail": "Run the C program",
+            "dependsOn": [
+                "C/C++: gcc.exe build active file"
+            ]
+        }
+    ]
+}
