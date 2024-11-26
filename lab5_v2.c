@@ -2,6 +2,7 @@
 #include <system.h>
 #include "includes.h"
 #include <io.h>
+#include <unistd.h>
 
 //        sw_sliders
 #define SW0 0x00000001
@@ -124,6 +125,24 @@ OS_EVENT *StateQueue4;
 OS_EVENT *StateQueue5;
 OS_EVENT *StateQueue6;
 
+void wait(int time)
+{
+    usleep(time * 1000);
+}
+
+void cycle(int *state, int *pstate)
+{
+    if (*state >= 4)
+    {
+        *state = 1;
+        *pstate = 4;
+        return;
+    }
+    *pstate = *state;
+    *state = *state + 1;
+    return;
+}
+
 // read slider value
 void task1(void *pdata)
 {
@@ -138,27 +157,62 @@ void task1(void *pdata)
         printf("pstate = %d\n", pstate);
         printf("swtate = %d\n", swstate);
 
-        if (__builtin_popcount(swstate >> 2) > 1)
+        if (swstate & SW0) // automatic mode
         {
-            state = 7;
-        };
-
-        if (state == 5 || state == 6 || state == 7)
-        { // reset z trybów awaryjnych
-            if (swstate & SW3)
+            cycle(&state, &pstate);
+            wait(2);
+        }
+        else
+        {
+            if (__builtin_popcount(swstate >> 2) > 1)
             {
-                state = 1;
-                pstate = 4;
-            }
-        };
+                state = 7;
+            };
 
-        if (swstate & SW5)
-        { // blinking orange mode
-            state = 5;
-        };
-        if (swstate & SW4)
-        { // emergency mode
-            state = 6;
+            if (state == 5 || state == 6 || state == 7)
+            { // reset z trybów awaryjnych
+                if (swstate & SW3)
+                {
+                    state = 1;
+                    pstate = 4;
+                }
+            };
+
+            if (swstate & SW5)
+            { // blinking orange mode
+                state = 5;
+            };
+            if (swstate & SW4)
+            { // emergency mode
+                state = 6;
+            };
+
+            if (state == STATE_RED_ORANGE)
+            {
+                if ((swstate & SW8) && (pstate == 1))
+                {
+                    state = 3;
+                    pstate = 2;
+                }
+            };
+
+            if (state == STATE_GREEN)
+            {
+                if ((swstate & SW7) && (pstate == 2))
+                {
+                    state = 4;
+                    pstate = 3;
+                }
+            };
+
+            if (state == STATE_ORANGE)
+            {
+                if ((swstate & SW6) && (pstate == 3))
+                {
+                    state = 1;
+                    pstate = 4;
+                }
+            };
         };
 
         if (state == STATE_RED)
@@ -170,33 +224,6 @@ void task1(void *pdata)
             {
                 state = 2;
                 pstate = 1;
-            }
-        };
-
-        if (state == STATE_RED_ORANGE)
-        {
-            if ((swstate & SW8) && (pstate == 1))
-            {
-                state = 3;
-                pstate = 2;
-            }
-        };
-
-        if (state == STATE_GREEN)
-        {
-            if ((swstate & SW7) && (pstate == 2))
-            {
-                state = 4;
-                pstate = 3;
-            }
-        };
-
-        if (state == STATE_ORANGE)
-        {
-            if ((swstate & SW6) && (pstate == 3))
-            {
-                state = 1;
-                pstate = 4;
             }
         };
 
