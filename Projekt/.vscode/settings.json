@@ -1,0 +1,22 @@
+{
+    "cmake.configureArgs": [
+        "-DVCPKG_APPLOCAL_DEPS=ON",
+        "-DX_VCPKG_APPLOCAL_DEPS_INSTALL=ON",
+        "-DVCPKG_MANIFEST_MODE=OFF",
+        "-DVCPKG_TARGET_TRIPLET=x64-windows"
+    ],
+    "vcpkg.general.enable": true,
+    "vcpkg.target.hostTriplet": "arm-neon-android",
+    "vcpkg.target.defaultTriplet": "x64-windows",
+    "vcpkg.target.useStaticLib": false,
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "A:\\microsoft-vcpkg/scripts/buildsystems/vcpkg.cmake"
+    },
+    "vcpkg.target.installDependencies": true,
+    "vcpkg.target.preferSystemLibs": false,
+    "vcpkg.target.useManifest": false,
+    "cmake.ignoreCMakeListsMissing": true,
+    "files.associations": {
+        "stdio.h": "c"
+    }
+}
