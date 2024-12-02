@@ -4,7 +4,6 @@
 #include <cpu.h>
 #include <os.h>
 #include <ucos_ii.h>
-#include <ucos_ii.c>
 #include "app_cfg.h"
 #include <os_cpu.h>
 
@@ -92,10 +91,6 @@ int main(void)
 
 
     OSStart();                                                  /* Start multitasking (i.e. give control to uC/OS-II)   */
-
-    while (DEF_ON) {                                            /* Should Never Get Here.                               */
-        ;
-    }
 
     return 0;
 }
