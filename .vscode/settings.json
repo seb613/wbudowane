@@ -4,7 +4,10 @@
     "files.associations": {
         "gtk.h": "c",
         "gtklabel.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "ucos_ii.h": "c",
+        "os_cpu.h": "c",
+        "os.h": "c"
     },
     "vcpkg.target.useManifest": false,
     "cmake.configureArgs": [

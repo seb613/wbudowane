@@ -3,12 +3,14 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**",
                 "C:\\msys64\\mingw64\\include\\gtk-3.0",
                 "C:/msys64/mingw64/include/glib-2.0",
                 "C:\\msys64\\mingw64\\include\\gtk-4.0",
-                "A:\\Pulpit\\wbudowane\\uC\\uC-OS3\\Source",
-                "C:\\msys64\\mingw64\\include\\sys"
+                "C:\\msys64\\mingw64\\include\\sys",
+                "${workspaceFolder}\\ucos-vs\\**",
+                "${workspaceFolder}/ucos-vs/Micrium/Software/*",
+                "${workspaceFolder}/ucos-vs/Micrium/Software/uCOS-II/Ports/Win32/Visual Studio",
+                "A:\\Pulpit\\wbudowane\\ucos-vs\\Micrium\\Software\\uCOS-II\\Source"
             ],
             "defines": [
                 "_DEBUG",
@@ -17,7 +19,8 @@
             ],
             "cStandard": "c17",
             "cppStandard": "gnu++17",
-            "intelliSenseMode": "windows-gcc-x64"
+            "intelliSenseMode": "windows-gcc-x64",
+            "mergeConfigurations": true
         }
     ],
     "version": 4

@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>A:\Pulpit\ucos-vs\Microsoft\Windows\Kernel\OS2\VS\Debug\OS2.exe</FullPath>
+      <FullPath>A:\Pulpit\wbudowane\ucos-vs\Microsoft\Windows\Kernel\OS2\VS\Debug\OS2.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

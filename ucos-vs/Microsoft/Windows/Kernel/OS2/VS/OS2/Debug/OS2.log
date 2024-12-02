@@ -1,1 +1,25 @@
-﻿  OS2.vcxproj -> A:\Pulpit\ucos-vs\Microsoft\Windows\Kernel\OS2\VS\Debug\OS2.exe
+﻿  cpu_core.c
+  cpu_c.c
+  lib_ascii.c
+  lib_math.c
+  lib_mem.c
+  lib_str.c
+  os_cpu_c.c
+  os_core.c
+  os_dbg_r.c
+  os_flag.c
+  os_mbox.c
+  os_mem.c
+  os_mutex.c
+  os_q.c
+  os_sem.c
+  os_task.c
+  os_time.c
+  os_tmr.c
+  bsp_cpu.c
+  app_hooks.c
+  Generowanie kodu...
+  Trwa kompilowanie...
+  main.c
+  Generowanie kodu...
+  OS2.vcxproj -> A:\Pulpit\wbudowane\ucos-vs\Microsoft\Windows\Kernel\OS2\VS\Debug\OS2.exe
