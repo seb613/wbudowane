@@ -20,7 +20,7 @@
 - Elfa przenosimy np. na pulpit
 - Wbijamy na stronę: https://cpulator.01xz.net/?sys=nios-de1soc
 - Ładujemy binarkę File > Load ELF
-- W lewym dolnym rogu w ustawieniach wyłączamy wszystkie dobugging checks
+- W lewym dolnym rogu w ustawieniach wyłączamy wszystkie debugging checks
 - Kontynułujemy (F3)
 - Gotowe 
 
