@@ -1,0 +1,921 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "av_config_SCLK",
+					"strict" : false
+				},
+				{
+					"name" : "audio_DACDAT",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_ba[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_ba[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_cas_n",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_cs_n",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dqm[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dqm[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_ras_n",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_we_n",
+					"strict" : false
+				},
+				{
+					"name" : "adc_sclk",
+					"strict" : false
+				},
+				{
+					"name" : "adc_cs_n",
+					"strict" : false
+				},
+				{
+					"name" : "adc_din",
+					"strict" : false
+				},
+				{
+					"name" : "irda_TXD",
+					"strict" : false
+				},
+				{
+					"name" : "vga_HS",
+					"strict" : false
+				},
+				{
+					"name" : "vga_VS",
+					"strict" : false
+				},
+				{
+					"name" : "vga_BLANK",
+					"strict" : false
+				},
+				{
+					"name" : "vga_R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_R[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_R[4]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_R[5]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_R[6]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_R[7]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_G[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_G[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_G[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_G[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_G[4]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_G[5]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_G[6]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_G[7]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "video_in_overflow_flag",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[7]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[8]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[9]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[10]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[11]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[12]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[13]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[14]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[15]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[16]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[17]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[18]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[19]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[20]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[21]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[22]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[23]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[24]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[25]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[26]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[27]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[28]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[29]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[30]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_hex0_export[31]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[7]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[8]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[9]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[10]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[11]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[12]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[13]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[14]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_hex4_export[15]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_export[4]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_export[5]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_export[6]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_export[7]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_export[8]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_export[9]",
+					"strict" : false
+				},
+				{
+					"name" : "av_config_SDAT",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[4]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[5]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[6]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[7]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[8]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[9]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[10]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[11]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[12]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[13]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[14]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[15]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[16]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[17]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[18]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[19]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[20]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[21]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[22]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[23]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[24]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[25]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[26]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[27]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[28]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[29]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[30]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp2_export[31]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_port_dual_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[9]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[10]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[11]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[12]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[13]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[14]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_dq[15]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[4]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[5]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[6]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[7]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[8]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[9]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[10]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[11]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[12]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[13]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[14]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[15]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[16]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[17]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[18]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[19]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[20]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[21]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[22]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[23]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[24]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[25]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[26]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[27]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[28]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[29]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[30]",
+					"strict" : false
+				},
+				{
+					"name" : "expansion_jp1_export[31]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_port_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_port_DAT",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_port_dual_DAT",
+					"strict" : false
+				},
+				{
+					"name" : "video_in_TD_CLK27",
+					"strict" : false
+				},
+				{
+					"name" : "video_in_clk27_reset",
+					"strict" : false
+				},
+				{
+					"name" : "pushbuttons_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pushbuttons_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pushbuttons_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pushbuttons_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "slider_switches_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "slider_switches_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "slider_switches_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "slider_switches_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "slider_switches_export[4]",
+					"strict" : false
+				},
+				{
+					"name" : "slider_switches_export[5]",
+					"strict" : false
+				},
+				{
+					"name" : "slider_switches_export[6]",
+					"strict" : false
+				},
+				{
+					"name" : "slider_switches_export[7]",
+					"strict" : false
+				},
+				{
+					"name" : "slider_switches_export[8]",
+					"strict" : false
+				},
+				{
+					"name" : "slider_switches_export[9]",
+					"strict" : false
+				},
+				{
+					"name" : "audio_DACLRCK",
+					"strict" : false
+				},
+				{
+					"name" : "audio_BCLK",
+					"strict" : false
+				},
+				{
+					"name" : "audio_ADCLRCK",
+					"strict" : false
+				},
+				{
+					"name" : "audio_ADCDAT",
+					"strict" : false
+				},
+				{
+					"name" : "adc_dout",
+					"strict" : false
+				},
+				{
+					"name" : "irda_RXD",
+					"strict" : false
+				},
+				{
+					"name" : "video_in_TD_DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "video_in_TD_DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "video_in_TD_DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "video_in_TD_DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "video_in_TD_DATA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "video_in_TD_DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "video_in_TD_DATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "video_in_TD_DATA[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

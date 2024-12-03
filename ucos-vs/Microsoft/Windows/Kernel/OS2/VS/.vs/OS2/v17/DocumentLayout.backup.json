@@ -28,8 +28,7 @@
               "RelativeToolTip": "..\\app_hooks.c",
               "ViewState": "AgIAAPMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-12-02T18:15:20.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T18:15:20.769Z"
             },
             {
               "$type": "Document",
@@ -37,9 +36,9 @@
               "Title": "main.c",
               "DocumentMoniker": "A:\\Pulpit\\wbudowane\\ucos-vs\\Microsoft\\Windows\\Kernel\\OS2\\main.c",
               "RelativeDocumentMoniker": "..\\main.c",
-              "ToolTip": "A:\\Pulpit\\wbudowane\\ucos-vs\\Microsoft\\Windows\\Kernel\\OS2\\main.c*",
-              "RelativeToolTip": "..\\main.c*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "ToolTip": "A:\\Pulpit\\wbudowane\\ucos-vs\\Microsoft\\Windows\\Kernel\\OS2\\main.c",
+              "RelativeToolTip": "..\\main.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-12-02T11:26:46.171Z",
               "EditorCaption": ""
