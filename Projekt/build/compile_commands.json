@@ -1,8 +1,0 @@
-[
-{
-  "directory": "A:/Pulpit/wbudowane/Projekt/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -isystem C:/msys64/mingw64/include/SDL2 -g -o CMakeFiles\\helloWorld.dir\\main.c.obj -c A:\\Pulpit\\wbudowane\\Projekt\\main.c",
-  "file": "A:\\Pulpit\\wbudowane\\Projekt\\main.c",
-  "output": "CMakeFiles\\helloWorld.dir\\main.c.obj"
-}
-]

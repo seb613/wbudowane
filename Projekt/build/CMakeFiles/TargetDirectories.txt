@@ -1,3 +1,0 @@
-A:/Pulpit/wbudowane/Projekt/build/CMakeFiles/helloWorld.dir
-A:/Pulpit/wbudowane/Projekt/build/CMakeFiles/edit_cache.dir
-A:/Pulpit/wbudowane/Projekt/build/CMakeFiles/rebuild_cache.dir

@@ -1,4 +1,0 @@
-﻿  main.c
-A:\Pulpit\wbudowane\ucos-vs\Microsoft\Windows\Kernel\OS2\main.c(65,5): warning C4013: niezdefiniowany "Mem_Init"; przy założeniu, że extern zwraca int
-A:\Pulpit\wbudowane\ucos-vs\Microsoft\Windows\Kernel\OS2\main.c(67,5): warning C4013: niezdefiniowany "CPU_Init"; przy założeniu, że extern zwraca int
-  OS2.vcxproj -> A:\Pulpit\wbudowane\ucos-vs\Microsoft\Windows\Kernel\OS2\VS\Debug\OS2.exe
