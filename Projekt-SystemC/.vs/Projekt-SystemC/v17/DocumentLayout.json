@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "A:\\Pulpit\\wbudowane\\wbudowane\\Projekt SystemC\\Projekt-SystemC\\",
+  "WorkspaceRootPath": "A:\\Pulpit\\wbudowane\\wbudowane\\Projekt-SystemC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{41589AED-907C-4358-A827-941FDF5A5EDB}|Projekt-SystemC.vcxproj|A:\\Pulpit\\wbudowane\\wbudowane\\Projekt SystemC\\Projekt-SystemC\\Projekt-SystemC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{41589AED-907C-4358-A827-941FDF5A5EDB}|Projekt-SystemC.vcxproj|A:\\Pulpit\\wbudowane\\wbudowane\\Projekt-SystemC\\Projekt-SystemC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{41589AED-907C-4358-A827-941FDF5A5EDB}|Projekt-SystemC.vcxproj|solutionrelative:Projekt-SystemC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\Pulpit\\wbudowane\\wbudowane\\Projekt SystemC\\Projekt-SystemC\\Dependencies\\src\\sysc\\kernel\\sc_cmnhdr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\Pulpit\\wbudowane\\wbudowane\\Projekt-SystemC\\Dependencies\\src\\sysc\\kernel\\sc_cmnhdr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Dependencies\\src\\sysc\\kernel\\sc_cmnhdr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Projekt-SystemC.cpp",
-              "DocumentMoniker": "A:\\Pulpit\\wbudowane\\wbudowane\\Projekt SystemC\\Projekt-SystemC\\Projekt-SystemC.cpp",
+              "DocumentMoniker": "A:\\Pulpit\\wbudowane\\wbudowane\\Projekt-SystemC\\Projekt-SystemC.cpp",
               "RelativeDocumentMoniker": "Projekt-SystemC.cpp",
-              "ToolTip": "A:\\Pulpit\\wbudowane\\wbudowane\\Projekt SystemC\\Projekt-SystemC\\Projekt-SystemC.cpp",
+              "ToolTip": "A:\\Pulpit\\wbudowane\\wbudowane\\Projekt-SystemC\\Projekt-SystemC.cpp",
               "RelativeToolTip": "Projekt-SystemC.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwFQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-12T14:27:06.321Z",
               "EditorCaption": ""
@@ -37,9 +37,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "sc_cmnhdr.h",
-              "DocumentMoniker": "A:\\Pulpit\\wbudowane\\wbudowane\\Projekt SystemC\\Projekt-SystemC\\Dependencies\\src\\sysc\\kernel\\sc_cmnhdr.h",
+              "DocumentMoniker": "A:\\Pulpit\\wbudowane\\wbudowane\\Projekt-SystemC\\Dependencies\\src\\sysc\\kernel\\sc_cmnhdr.h",
               "RelativeDocumentMoniker": "Dependencies\\src\\sysc\\kernel\\sc_cmnhdr.h",
-              "ToolTip": "A:\\Pulpit\\wbudowane\\wbudowane\\Projekt SystemC\\Projekt-SystemC\\Dependencies\\src\\sysc\\kernel\\sc_cmnhdr.h",
+              "ToolTip": "A:\\Pulpit\\wbudowane\\wbudowane\\Projekt-SystemC\\Dependencies\\src\\sysc\\kernel\\sc_cmnhdr.h",
               "RelativeToolTip": "Dependencies\\src\\sysc\\kernel\\sc_cmnhdr.h",
               "ViewState": "AgIAAFwAAAAAAAAAAAAnwHEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
