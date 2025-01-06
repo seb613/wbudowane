@@ -1,0 +1,7 @@
+{
+    "cmake.sourceDirectory": "a:/Pulpit/wbudowane/wbudowane/Projekt-SystemC/Dependencies/src",
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp"
+    }
+}

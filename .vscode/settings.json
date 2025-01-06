@@ -1,6 +1,6 @@
 {
     "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\gcc.exe",
-    "cmake.sourceDirectory": "a:/Pulpit/wbudowane/Projekt",
+    "cmake.sourceDirectory": "a:/Pulpit/wbudowane/wbudowane/Projekt-SystemC/Dependencies/src",
     "files.associations": {
         "gtk.h": "c",
         "gtklabel.h": "c",
