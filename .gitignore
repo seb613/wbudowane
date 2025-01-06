@@ -2,3 +2,5 @@ linker.h
 system.h
 /uc
 *.ipch
+Projekt-SystemC/.vs
+**/.vs/

@@ -5,7 +5,7 @@
 #include <unistd.h>
 
 
-//ODKOMENTOWAĆ DO SYMULACJI
+//OD
 #define module HEX3_HEX0_BASE
 
 ///
