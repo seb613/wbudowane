@@ -1,3 +1,5 @@
+## ALTERA DE1-SOC
+
 ## Jak symulować płytkę:
 
 - Pobieramy quartus (najlepiej 17.1)
